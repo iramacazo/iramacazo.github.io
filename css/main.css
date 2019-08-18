@@ -62,10 +62,6 @@ a.nav-link:hover {
     color: #ce7586 !important;
 }
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-    color: #ce7586 !important;
-}
-
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(206, 117, 134, 0.66)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
@@ -95,6 +91,14 @@ a.nav-link:hover {
 
 .technology{
     font-size: 0.7em;
+}
+
+#projects{
+    background-color: #ededed;
+}
+
+#contact{
+    background-color: #0e0709 !important;
 }
 
 @media screen and (max-width: 767px) {

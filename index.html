@@ -3,8 +3,8 @@
     <title>iramacazo.github.io</title>
 
     <!-- Jquery & Popper -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -42,21 +42,21 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-md-4">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#title" id="link-title">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about" id="link-about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects" id="link-project">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact" id="link-contact">Contact</a>
             </li>
         </ul>
     </div>
 </nav>
-<div class="d-flex flex-column align-items-center content text-center">
+<div class="d-flex flex-column align-items-center content text-center" id="about">
     <h2>About</h2>
     <svg id="i-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"
          stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -70,8 +70,10 @@
                 <img class="img-fluid" src="css/images/Me.png" style="border-radius: 50%;">
             </div>
             <br/>
-            <p id="about-me">I'm a full-stack developer who graduated Bachelor of Science in Information Systems at De La Salle
-                University. I have a passion for creating solutions and making use of technology to make life easier.</p>
+            <p id="about-me">I'm a full-stack developer who graduated Bachelor of Science in Information Systems at De
+                La Salle
+                University. I have a passion for creating solutions and making use of technology to make life
+                easier.</p>
         </div>
         <div class="d-flex flex-column align-items-center">
             <h3>What I know</h3>
@@ -115,6 +117,22 @@
             </div>
         </div>
     </div>
+</div>
+<div class="d-flex flex-column align-items-center content text-center" id="projects">
+    <h2>Projects</h2>
+    <svg id="i-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"
+         stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M2 16 L30 16"/>
+    </svg>
+    <br/>
+</div>
+<div class="d-flex flex-column align-items-center content text-center" id="contact">
+    <h2 style="color: #ce7586">Contact</h2>
+    <svg id="i-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"
+         stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color: #ce7586;">
+        <path d="M2 16 L30 16"/>
+    </svg>
+    <br/>
 </div>
 </body>
 </html>
