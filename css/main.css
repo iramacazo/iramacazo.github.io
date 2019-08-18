@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400&display=swap');
+
+html {
+    font-size: calc(1em + 1vw)
+}
+
+.first-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background_1.jpg');
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 300;
+    font-size: 1.7em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+#about-me {
+    font-size: 0.7em;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em
+}
+
+.name {
+    color: #ce7586;
+    font-weight: 400;
+}
+
+.navbar {
+    background-color: #0e0709 !important;
+}
+
+
+a.nav-link {
+    font-size: 0.75em;
+    padding: 5px;
+    color: #f89dae !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+a.nav-link:hover {
+    color: #ce7586 !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #ce7586 !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(206, 117, 134, 0.66)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(206, 117, 134, 0.66) !important;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 10vh;
+}
+
+.content {
+    padding: 5vh 10vw 5vh 10vw;
+}
+
+.devicon{
+    font-size: 2.5em;
+    line-height: 1.5;
+}
+
+.technology{
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .devicon{
+        font-size: 3.2em;
+        line-height: 1.5;
+    }
+
+    .title {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
