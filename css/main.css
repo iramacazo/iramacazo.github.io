@@ -5,6 +5,11 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+.wrapper {
+    overflow-x: hidden;
+    height: auto;
+}
+
 .first-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background_1.jpg');
     background-position: 0 60%;
@@ -37,7 +42,7 @@ h2 {
 
 h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2em
+    font-size: 1em
 }
 
 .project-subtext{
@@ -179,7 +184,7 @@ a.nav-link:hover {
         top: 0;
         left: 0;
     }
-
+/*
     .modal-text{
         font-size: 2em;
     }
@@ -187,21 +192,24 @@ a.nav-link:hover {
     .modal-dialog {
         max-width: 100%;
         margin: 1.75em 1em;
-    }
+    }*/
 
     .devicon{
-        font-size: 3.2em;
+        font-size: 1.5em;
         line-height: 1.5;
     }
 
-
+    .project-title{
+        font-size: 0.7em;
+    }
+/*
     .modal-title{
         font-size: 3em;
     }
 
     .close{
         font-size: 4em;
-    }
+    }*/
 
     .title {
         padding-left: 5vw;

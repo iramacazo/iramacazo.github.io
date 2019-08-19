@@ -25,7 +25,8 @@ $(document).ready(function () {
     $('#projects-button').click(function(){
         $('html,body').animate({
             scrollTop: $('#projects').offset().top - 60,
-        }, 500, 'linear')
+        }, 500, 'linear');
+        console.log('why no work')
     });
 
     $('#projectModal').on('show.bs.modal', function (event) {
