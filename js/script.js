@@ -29,10 +29,10 @@ $(document).ready(function () {
     });
 
     $('#projects-button').click(function(){
+        alert('neil anubayan');
         $('html,body').animate({
             scrollTop: $('#projects').offset().top - 60,
         }, 500, 'linear');
-        alert('neil anubayan')
     });
 
 
