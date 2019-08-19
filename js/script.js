@@ -1,6 +1,7 @@
 $(document).ready(function () {
     window.onscroll = function() {
-        stickNavbar()
+        stickNavbar();
+        $('.navbar-collapse').collapse('hide');
     };
     function stickNavbar() {
         let navbar = $('#nav');
@@ -31,6 +32,7 @@ $(document).ready(function () {
         $('html,body').animate({
             scrollTop: $('#projects').offset().top - 60,
         }, 500, 'linear');
+        alert('neil anubayan')
     });
 
 
