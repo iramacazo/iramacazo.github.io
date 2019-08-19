@@ -19,15 +19,21 @@ $(document).ready(function () {
             },
             500,
             'linear'
-        )
+        );
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    $(document).click(function(){
+        $('.navbar-collapse').collapse('hide');
     });
 
     $('#projects-button').click(function(){
         $('html,body').animate({
             scrollTop: $('#projects').offset().top - 60,
         }, 500, 'linear');
-        console.log('why no work')
     });
+
+
 
     $('#projectModal').on('show.bs.modal', function (event) {
         let button = $(event.relatedTarget); // Button that triggered the modal
