@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400&display=swap');
 
 html {
-    font-size: calc(1em + 1vw)
+    font-size: calc(1em + 1vw);
+    font-family: 'Roboto', sans-serif;
 }
 
 .first-section {
@@ -39,6 +40,11 @@ h3 {
     font-size: 1.2em
 }
 
+.project-subtext{
+    font-size: 0.9em;
+    color: #ce7586 !important;
+}
+
 .name {
     color: #ce7586;
     font-weight: 400;
@@ -47,6 +53,7 @@ h3 {
 .navbar {
     background-color: #0e0709 !important;
     width: 100%;
+    z-index: 1000;
 }
 
 
@@ -101,6 +108,69 @@ a.nav-link:hover {
     background-color: #0e0709 !important;
 }
 
+.project-box{
+    position: relative;
+    width: 100%;
+    background-color: #ededed;
+}
+
+.project-image {
+    opacity: 1;
+    display: block;
+    width: calc(20em + 5vw);
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.project-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.project-box:hover .project-image {
+    opacity: 0;
+}
+
+.project-box:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-open{
+    font-size: 0.9em;
+}
+
+#projectModal{
+    font-size: 0.5em !important;
+}
+
+.modal-header{
+    padding: 1em 1em;
+}
+
+.close{
+    font-size: 2em;
+}
+
+.modal-title{
+    font-size: 1.5em;
+}
+
+.modal-body{
+    padding: 0;
+}
+
+.modal-body-content{
+    padding: 1em 3.5em;
+    text-align: left;
+}
+
 @media screen and (max-width: 767px) {
     .navbar {
         position: fixed;
@@ -109,9 +179,27 @@ a.nav-link:hover {
         left: 0;
     }
 
+    .modal-text{
+        font-size: 2em;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
+        margin: 1.75em 1em;
+    }
+
     .devicon{
         font-size: 3.2em;
         line-height: 1.5;
+    }
+
+
+    .modal-title{
+        font-size: 3em;
+    }
+
+    .close{
+        font-size: 4em;
     }
 
     .title {
