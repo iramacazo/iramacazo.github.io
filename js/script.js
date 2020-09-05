@@ -45,6 +45,7 @@ $(document).ready(function () {
         if (data === 'missuniverse') {
             modal.find('.modal-title').text('Miss Universe Singapore');
             modal.find('.modal-text').text('A website for the Miss Universe Singapore Pageant to give updates on the pageant and take in applications for models. ');
+            modal.find('.view-site').hide();
             modal.find('#image1').attr('src', 'css/images/mu1.png');
             modal.find('#image2').attr('src', 'css/images/mu2.png');
             modal.find('#image3').attr('src', 'css/images/mu3.png');
